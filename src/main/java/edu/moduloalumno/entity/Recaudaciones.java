@@ -38,7 +38,7 @@ public class Recaudaciones implements Serializable {
     }
     
     public void setSiglaProg(String siglaProg ) {
-    	this.siglaProg = siglaProg.trim();
+    	this.siglaProg = (siglaProg!=null)?siglaProg.trim():siglaProg;
     }
 
 	public Integer getIdRec() {
